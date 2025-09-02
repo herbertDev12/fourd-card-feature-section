@@ -13,7 +13,7 @@ import {
 export default function GridContainer(){
 
     return (
-        <div className="max-w-xs">
+        <div className="grid gap-6 w-fit">
           <Card>
             <CardHeader>
                 <CardTitle>Supervisor </CardTitle>
@@ -22,6 +22,7 @@ export default function GridContainer(){
             <CardFooter>
                 <img
                   src="./src/assets/icon-supervisor.svg"
+                  alt="Supervisor icon"
                 />
             </CardFooter>
           </Card>
@@ -33,6 +34,7 @@ export default function GridContainer(){
             <CardFooter>
                 <img
                   src="./src/assets/icon-team-builder.svg"
+                  alt="Team Builder icon"
                 />
             </CardFooter>
           </Card>
@@ -44,18 +46,20 @@ export default function GridContainer(){
             <CardFooter>
                 <img
                   src="./src/assets/icon-karma.svg"
+                  alt="Karma icon"
                 />
             </CardFooter>
           </Card>
           <Card>
             <CardHeader>
-                <CardTitle>Calculator </CardTitle>
+                <CardTitle>Calculator</CardTitle>
                 <CardDescription><p>Uses data from past projects to provide better delivery estimates</p>
                 </CardDescription>
             </CardHeader>
             <CardFooter>
                 <img
                   src="./src/assets/icon-calculator.svg"
+                  alt="Karma icon"
                 />
             </CardFooter>
           </Card>

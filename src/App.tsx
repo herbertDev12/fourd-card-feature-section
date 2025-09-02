@@ -10,7 +10,7 @@ function App() {
     <>
       <h1>Reliable, efficient delivery</h1>
       <h1>Powered by Technology</h1>
-      <div className='content-center'>
+      <div className="min-h-screen flex items-center justify-center p-4 ">
         <GridContainer/>
       </div>
     </>
