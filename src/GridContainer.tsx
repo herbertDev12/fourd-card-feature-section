@@ -1,7 +1,5 @@
 import {
   Card,
-  CardAction,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -10,59 +8,66 @@ import {
 
 
 
-export default function GridContainer(){
-
+export default function GridContainer() {
     return (
-        <div className="grid gap-6 w-fit">
-          <Card>
-            <CardHeader>
-                <CardTitle>Supervisor </CardTitle>
-                <CardDescription>Monitors activity to identify project roadblocks</CardDescription>
-            </CardHeader>
-            <CardFooter>
-                <img
-                  src="./src/assets/icon-supervisor.svg"
-                  alt="Supervisor icon"
-                />
-            </CardFooter>
-          </Card>
-          <Card>
-            <CardHeader>
-                <CardTitle>Team Builder</CardTitle>
-                <CardDescription>Scans our talent network to create the optimal team for your project </CardDescription>
-            </CardHeader>
-            <CardFooter>
-                <img
-                  src="./src/assets/icon-team-builder.svg"
-                  alt="Team Builder icon"
-                />
-            </CardFooter>
-          </Card>
-          <Card>
-            <CardHeader>
-                <CardTitle>Karma</CardTitle>
-                <CardDescription>Regularly evaluates our talent to ensure quality</CardDescription>
-            </CardHeader>
-            <CardFooter>
-                <img
-                  src="./src/assets/icon-karma.svg"
-                  alt="Karma icon"
-                />
-            </CardFooter>
-          </Card>
-          <Card>
-            <CardHeader>
-                <CardTitle>Calculator</CardTitle>
-                <CardDescription><p>Uses data from past projects to provide better delivery estimates</p>
-                </CardDescription>
-            </CardHeader>
-            <CardFooter>
-                <img
-                  src="./src/assets/icon-calculator.svg"
-                  alt="Karma icon"
-                />
-            </CardFooter>
-          </Card>
+        <div className="min-h-screen flex items-center justify-center p-4">
+    
+            <div className="grid gap-6 w-fit lg:grid-cols-3 lg:grid-rows-2">
+                
+                <Card className="lg:row-span-2 lg:self-center">
+                    <CardHeader>
+                        <CardTitle>Supervisor</CardTitle>
+                        <CardDescription>Monitors activity to identify project roadblocks</CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <img
+                            src="./src/assets/icon-supervisor.svg"
+                            alt="Supervisor icon"
+                        />
+                    </CardFooter>
+                </Card>
+
+                <Card>
+                    <CardHeader>
+                        <CardTitle>Team Builder</CardTitle>
+                        <CardDescription>Scans our talent network to create the optimal team for your project</CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <img
+                            src="./src/assets/icon-team-builder.svg"
+                            alt="Team Builder icon"
+                        />
+                    </CardFooter>
+                </Card>
+
+                <Card className="lg:row-start-1 lg:col-start-2">
+                    <CardHeader>
+                        <CardTitle>Karma</CardTitle>
+                        <CardDescription>Regularly evaluates our talent to ensure quality</CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <img
+                            src="./src/assets/icon-karma.svg"
+                            alt="Karma icon"
+                        />
+                    </CardFooter>
+                </Card>
+
+                <Card className="lg:row-span-2 lg:row-start-1 lg:col-start-3 lg:self-center">
+                    <CardHeader>
+                        <CardTitle>Calculator</CardTitle>
+                        <CardDescription>
+                            <p>Uses data from past projects to provide better delivery estimates</p>
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter>
+                        <img
+                            src="./src/assets/icon-calculator.svg"
+                            alt="Calculator icon"
+                        />
+                    </CardFooter>
+                </Card>
+            </div>
         </div>
     )
 }
