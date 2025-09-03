@@ -8,16 +8,16 @@ import {
 
 export default function GridContainer() {
     return (
-        <div className="min-h-screen flex items-center justify-center p-4 ">
+        <div className="mt-12 flex items-center justify-center p-4 ">
     
             <div className="grid gap-6 w-fit lg:grid-cols-3 lg:grid-rows-2">
                 
-                <Card className="lg:row-span-2 lg:self-center">
-                    <CardHeader>
+                <Card className="lg:row-span-2 lg:self-center border-t-cyan-500">
+                    <CardHeader className="text-left">
                         <CardTitle>Supervisor</CardTitle>
                         <CardDescription>Monitors activity to identify project roadblocks</CardDescription>
                     </CardHeader>
-                    <CardFooter>
+                    <CardFooter className="flex justify-end">
                         <img
                             src="./src/assets/icon-supervisor.svg"
                             alt="Supervisor icon"
@@ -25,8 +25,8 @@ export default function GridContainer() {
                     </CardFooter>
                 </Card>
 
-                <Card>
-                    <CardHeader>
+                <Card className="border-t-red-500 lg:row-start-1 lg:col-start-2">
+                    <CardHeader className="text-left">
                         <CardTitle>Team Builder</CardTitle>
                         <CardDescription>Scans our talent network to create the optimal team for your project</CardDescription>
                     </CardHeader>
@@ -38,8 +38,8 @@ export default function GridContainer() {
                     </CardFooter>
                 </Card>
 
-                <Card className="lg:row-start-1 lg:col-start-2">
-                    <CardHeader>
+                <Card className="border-t-yellow-500">
+                    <CardHeader className="text-left">
                         <CardTitle>Karma</CardTitle>
                         <CardDescription>Regularly evaluates our talent to ensure quality</CardDescription>
                     </CardHeader>
@@ -51,8 +51,8 @@ export default function GridContainer() {
                     </CardFooter>
                 </Card>
 
-                <Card className="lg:row-span-2 lg:row-start-1 lg:col-start-3 lg:self-center">
-                    <CardHeader>
+                <Card className="border-t-blue-600 lg:row-span-2 lg:row-start-1 lg:col-start-3 lg:self-center">
+                    <CardHeader className="text-left">
                         <CardTitle>Calculator</CardTitle>
                         <CardDescription>
                             <p>Uses data from past projects to provide better delivery estimates</p>
