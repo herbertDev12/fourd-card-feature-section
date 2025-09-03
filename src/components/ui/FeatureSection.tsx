@@ -19,7 +19,7 @@ export default function FeatureSection() {
                     </CardHeader>
                     <CardFooter >
                         <img
-                            src="./src/assets/icon-supervisor.svg"
+                            src="/icon-supervisor.svg"
                             alt="Supervisor icon"
                         />
                     </CardFooter>
@@ -32,7 +32,7 @@ export default function FeatureSection() {
                     </CardHeader>
                     <CardFooter>
                         <img
-                            src="./src/assets/icon-team-builder.svg"
+                            src="/icon-team-builder.svg"
                             alt="Team Builder icon"
                         />
                     </CardFooter>
@@ -45,7 +45,7 @@ export default function FeatureSection() {
                     </CardHeader>
                     <CardFooter>
                         <img
-                            src="./src/assets/icon-karma.svg"
+                            src="/icon-karma.svg"
                             alt="Karma icon"
                         />
                     </CardFooter>
@@ -60,7 +60,7 @@ export default function FeatureSection() {
                     </CardHeader>
                     <CardFooter>
                         <img
-                            src="./src/assets/icon-calculator.svg"
+                            src="/icon-calculator.svg"
                             alt="Calculator icon"
                         />
                     </CardFooter>
