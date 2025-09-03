@@ -6,11 +6,9 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-
-
 export default function GridContainer() {
     return (
-        <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="min-h-screen flex items-center justify-center p-4 ">
     
             <div className="grid gap-6 w-fit lg:grid-cols-3 lg:grid-rows-2">
                 
